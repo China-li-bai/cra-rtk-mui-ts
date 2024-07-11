@@ -22,6 +22,7 @@
   },
   "scripts": {
     "start": "set GENERATE_SOURCEMAP=false &&  react-scripts start",
+    "dev": "craco start",
     "serve": "serve -s build -p 65481",
     "build": "craco build",
     "build:serve": "npm run build && serve -s build -p 65481",

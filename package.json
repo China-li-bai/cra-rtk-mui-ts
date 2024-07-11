@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "cms-corpalert-app",
   "version": "1.0.0",
   "private": true,
   "devDependencies": {
@@ -23,8 +23,10 @@
   "scripts": {
     "start": "set GENERATE_SOURCEMAP=false &&  react-scripts start",
     "dev": "craco start",
+    "dev:cra": "react-scripts start",
     "serve": "serve -s build -p 65481",
     "build": "craco build",
+    "mock": "json-server __json_server__/db.json -c __json_server__/config.json",
     "build:serve": "npm run build && serve -s build -p 65481",
     "format": "prettier --write .",
     "lint": "eslint --ext ts,tsx src --fix"

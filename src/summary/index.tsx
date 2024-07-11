@@ -1,7 +1,3 @@
-import ReactDOM from 'react-dom/client';
-
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(<div>summary text</div>);
-
+import ReactDOM from "react-dom"
+const Content = ()=>(<>32323</>)
+ReactDOM.render( <Content/>, document.getElementById("root")!)
